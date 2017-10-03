@@ -1,0 +1,22 @@
+<div  fxLayout="row" fxLayoutAlign="center center" style="padding-top:10%">
+
+  <md-card class="login-card" fxFlex="30%" fxFlex.xs="70%">
+
+    <img class="biceps img-responsive mx-auto d-block" src="https://pre09.deviantart.net/3a47/th/pre/i/2013/127/d/e/double_bicep_by_bigmdesign-d64hpgq.png">
+    <h1 class="text-center">Login</h1>
+    <md-card-content>
+      <form (submit)="onSubmit()">
+        <md-form-field class="example-full-width">
+          <input type="text" mdInput placeholder="Email" [(ngModel)]="email" name="email" required>
+        </md-form-field>
+        <md-form-field class="example-full-width">
+          <input type="password" mdInput placeholder="Password"  [(ngModel)]="password" name="password" >
+        </md-form-field>
+        <button type="submit" value="Submit" md-raised-button color="primary">Login</button>
+      </form>
+    </md-card-content>
+
+  </md-card>
+
+
+</div>

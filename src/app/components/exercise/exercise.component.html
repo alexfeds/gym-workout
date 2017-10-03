@@ -1,0 +1,13 @@
+<div fxLayout="row" fxLayoutAlign="space-around center" style="padding-top:10%" fxLayoutWrap="wrap">
+  
+    <md-card (click)="onClick(dashScreen.description)" class="example-card" [fxFlex.xs]="40 / 1" *ngFor="let dashScreen of dashboardScreens">
+  
+      <img md-card-image src="{{dashScreen.img}}"  alt="Photo of a Shiba Inu">
+      <md-card-content>
+        <p id="text" style="text-align: center; font-weight:800">
+          {{dashScreen.description}}
+        </p>
+      </md-card-content>
+  
+    </md-card>
+  </div>

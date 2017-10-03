@@ -1,0 +1,36 @@
+{
+    "screenshots": [
+        {
+          "img": "/gym-workout/assets/images/dashboard/back.jpg",
+          "description": "back"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/biceps.jpg",
+          "description": "biceps"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/triceps.jpg",
+          "description": "triceps"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/shoulder.jpg",
+          "description": "shoulder"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/trapeciya.jpg",
+          "description": "trapeciya"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/chest.jpg",
+          "description": "chest"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/press.jpg",
+          "description": "press"
+        },
+        {
+          "img": "/gym-workout/assets/images/dashboard/legs.jpg",
+          "description": "legs"
+        }
+    ]
+  }

@@ -1,0 +1,14 @@
+img.biceps.img-responsive {
+  width: 40%;
+    height: auto;
+  }
+
+
+  md-card.example-card.mat-card {
+    margin-bottom: 5%;
+}
+
+
+.example-full-width {
+    width: 40%;
+  }

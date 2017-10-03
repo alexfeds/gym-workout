@@ -1,0 +1,74 @@
+<md-tab-group>
+  <md-tab label="log">
+
+    <div fxLayout="row" fxLayoutAlign="space-around center" style="padding-top:10%" fxLayoutWrap="wrap">
+
+      <md-card class="example-card" fxFlex.xs="95%">
+        <md-card-header>
+          <div md-card-avatar class="example-header-image"></div>
+          <md-card-title>Instructions</md-card-title>
+          <md-card-subtitle>5 set 8-12</md-card-subtitle>
+        </md-card-header>
+        <md-card-content>
+
+          <form class="example-form" fxLayout="row" fxLayoutAlign="space-around center">
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Reps" [(ngModel)]="reps" name="reps">
+            </md-form-field>
+            <md-form-field class="example-full-width">
+              <input mdInput placeholder="Weight" [(ngModel)]="weight" name="weight">
+            </md-form-field>
+          </form>
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <button (click)="saveSetLocally(reps, weight)" md-raised-button color="accent">COMPETE SET</button>
+          </div>
+        </md-card-content>
+
+      </md-card>
+        
+      <md-card class="example-card" fxFlex.xs="95%">
+        <md-card-header>
+          <div md-card-avatar class="example-header-image"></div>
+          <md-card-title>Todays log</md-card-title>
+          <md-card-subtitle>13 of September 2017</md-card-subtitle>
+        </md-card-header>
+        <md-card-content>
+
+          <md-table #table [dataSource]="dataSource">
+            
+                <!--- Note that these columns can be defined in any order.
+                      The actual rendered columns are set as a property on the row definition" -->
+            
+                <!-- Position Column -->
+                <ng-container mdColumnDef="reps">
+                  <md-header-cell *mdHeaderCellDef> No. </md-header-cell>
+                  <md-cell *mdCellDef="let element"> {{element.reps}} </md-cell>
+                </ng-container>
+            
+                <!-- Name Column -->
+                <ng-container mdColumnDef="weight">
+                  <md-header-cell *mdHeaderCellDef> Name </md-header-cell>
+                  <md-cell *mdCellDef="let element"> {{element.weight}} </md-cell>
+                </ng-container>
+            
+            
+            
+                <md-header-row *mdHeaderRowDef="displayedColumns"></md-header-row>
+                <md-row *mdRowDef="let row; columns: displayedColumns;"></md-row>
+              </md-table>
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <button type="submit" value="Submit" md-raised-button color="accent">COMPETE SET</button>
+          </div>
+        </md-card-content>
+
+      </md-card>
+
+
+
+
+    </div>
+
+
+  </md-tab>
+  <md-tab label="history">history</md-tab>
+</md-tab-group>

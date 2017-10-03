@@ -1,0 +1,13 @@
+md-grid-tile {
+    background: #484B4C;
+  }
+
+  img.biceps.img-responsive {
+    max-width: 40%;
+    height: auto;
+  }
+
+
+  md-card.example-card.mat-card {
+    margin-bottom: 5%;
+}

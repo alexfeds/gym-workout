@@ -1,0 +1,39 @@
+<md-sidenav-container>
+  <md-sidenav #sidenav class="sidenav">
+    <md-toolbar color="accent">Gym Workout</md-toolbar>
+
+  </md-sidenav>
+
+  <div class="sidenav-content">
+    <md-toolbar color="primary">
+
+      <button md-icon-button [mdMenuTriggerFor]="menu">
+                <md-icon>menu</md-icon>
+              </button>
+      <md-menu #menu="mdMenu">
+        <button md-menu-item routerLink="login" *ngIf="!(authService.user | async)" >
+                  <md-icon>fingerprint</md-icon>
+                  Log in
+                </button>
+        <button md-menu-item (click)="logout()" *ngIf="authService.user | async">
+                  <md-icon>directions_run</md-icon>
+                  Logout
+                </button>
+
+        <button routerLink="register" md-menu-item *ngIf="!(authService.user | async)" >
+                  <md-icon>playlist_add</md-icon>
+                      Register
+                </button>
+
+        <button md-menu-item  routerLink="/" >
+                  <md-icon>dashboard</md-icon>
+                 Dashboard
+                </button>
+      </md-menu>
+
+
+      <span class="spacer"></span>
+
+    </md-toolbar>
+    
+   

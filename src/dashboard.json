@@ -1,0 +1,36 @@
+{
+    "screenshots": [
+        {
+          "img": "/assets/images/dashboard/back.jpg",
+          "description": "back"
+        },
+        {
+          "img": "/assets/images/dashboard/biceps.jpg",
+          "description": "biceps"
+        },
+        {
+          "img": "/assets/images/dashboard/triceps.jpg",
+          "description": "triceps"
+        },
+        {
+          "img": "/assets/images/dashboard/plechi.jpg",
+          "description": "plechi"
+        },
+        {
+          "img": "/assets/images/dashboard/trapeciya.jpg",
+          "description": "trapeciya"
+        },
+        {
+          "img": "/assets/images/dashboard/grud.jpg",
+          "description": "grud"
+        },
+        {
+          "img": "/assets/images/dashboard/press.jpg",
+          "description": "press"
+        },
+        {
+          "img": "/assets/images/dashboard/legs.jpg",
+          "description": "legs"
+        }
+    ]
+  }

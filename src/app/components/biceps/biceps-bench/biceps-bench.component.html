@@ -1,0 +1,39 @@
+<div class="row">
+
+  <div class="col-lg-6 offset-lg-3">
+
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/dashboard/biceps.jpg" alt="Card image cap">
+      <div class="card-block">
+        <div class="row">
+          <label class="col-4" for="set">set</label>
+          <label class="col-4" for="set">rep</label>
+          <label class="col-4" for="set">weight</label>
+        </div>
+        <div class="row">
+            <input type="number" [(ngModel)]="set"  class="col-4" for="set">
+            <input type="number" [(ngModel)]="rep" class="col-4" for="set">
+            <input type="number" [(ngModel)]="weight" class="col-4" for="set">
+          </div>
+          
+          </div>
+
+          <ul class="row" *ngFor="let pipi of workout">
+              <li class="col-4" for="set">{{pipi.sets}}</li>
+              <li class="col-4" for="set">{{pipi.reps}}</li>
+              <li class="col-4" for="set">{{pipi.weights}}</li>
+          </ul>
+
+  <div class="row">
+          <button (click)="saveAll(set,weight,rep )" class="btn btn-link"><i class="fa fa-plus-square"></i> Add</button>
+  </div>
+    
+      <div class="card-footer">
+          <button type="button" (click)="saveDB(workout)" class="btn btn-success pull-right">save</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
